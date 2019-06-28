@@ -1,0 +1,30 @@
+body{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    background-color: blanchedalmond
+}
+
+#main-container{
+    margin: auto;
+}
+
+#header{
+    font-size: 40px;
+    color: blueviolet;
+    font-weight: 900;
+    text-align: center;
+}
+
+#subheader{
+
+}
+
+.titles{
+    font-size: 20px;
+    color: purple;
+    font-weight: bold;
+}
+
+img{
+    max-width: 100%;
+    border: 5px solid blue;
+}

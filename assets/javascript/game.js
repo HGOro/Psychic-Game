@@ -58,7 +58,7 @@ function resetVariables(){
 //Function to update computerChoice to choose new letter
 function newChoice(){
     var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
-console.log(computerChoice)
+console.log(newChoice)
 }
 
 

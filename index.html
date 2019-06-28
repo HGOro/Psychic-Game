@@ -5,21 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic-Letter-Guessing-Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylsheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-    <h1>The Psychic Game</h1>
-    <h3>Guess what letter I'm thinking of...</h3>
+    <!--Overall Container for everything(header and game)-->
+    <container id="main-container">
 
+        <!--Game Title and Instructions-->
+        <div id="header-container">
 
-    <!--Wins: 0-->
-    <p id="wins">Wins: </p>
-    <!--Losses: 0-->
-    <p id="losses">Losses: </p>
-    <!--Guesses left: 10-->
-    <p id="guessesLeft">Guesses Remaining: </p>
-    <!--Your guesses so far:-->
-    <p id="wrongGuesses">Guesses So Far: </p>
+            <header id="header">The Psychic Game</header>
+            <p id="subheader">Guess what letter I'm thinking of...</p>
+
+        </div>
+    
+    
+        <!--Game Container-->
+        <div id="game-container">
+
+            <!--Wins: 0-->
+            <p  class="titles" id="wins">Wins: </p>
+            <!--Losses: 0-->
+            <p  class="titles" id="losses">Losses: </p>
+            <!--Guesses left: 10-->
+            <p  class="titles" id="guessesLeft">Guesses Remaining: </p>
+            <!--Your guesses so far:-->
+            <p  class="titles" id="wrongGuesses">Guesses So Far: </p>
+
+        </div>
+
+        <div>
+            <img id="neon-sign" src="./assets/images/ioana-cristiana-1049180-unsplash.jpg" alt="neon psychic sign">
+        </div>
+
+        
+
+    </container>
 
 
 <script src="assets/javascript/game.js"></script>

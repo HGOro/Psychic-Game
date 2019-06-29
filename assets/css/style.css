@@ -4,17 +4,31 @@ body{
 }
 
 #main-container{
-    margin: auto;
+    /*
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    */
 }
 
 #header{
     font-size: 40px;
-    color: blueviolet;
+    color: rebeccapurple;
     font-weight: 900;
     text-align: center;
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-width: 5px;
 }
 
 #subheader{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rebeccapurple;
+    border-style: solid;
+    border-color: rebeccapurple; 
+    border-width: 2px;
 
 }
 
@@ -22,9 +36,35 @@ body{
     font-size: 20px;
     color: purple;
     font-weight: bold;
+    margin-left: 10%;
+}
+
+#neon-sign{
+    max-width: 100%;
+    margin: auto;
 }
 
 img{
     max-width: 100%;
-    border: 5px solid blue;
+    border: 0px solid purple;
+}
+
+#game-container{
+    display: flex;
+    padding-bottom: 5px;
+
+}
+
+#game-content{
+    width: 50%;
+    border-color: blueviolet;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+#game-result{
+    width: 50%;
+    border-color: blueviolet;
+    border-style: dashed;
+    border-width: 2px;
 }

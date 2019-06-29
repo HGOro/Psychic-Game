@@ -16,7 +16,7 @@ var letterToGuess = null;
 
 //Computer Random Letter Generator (Works!)
 var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
-console.log(computerChoice)
+console.log("comp choice: " + computerChoice)
 
 
 //PLAYER INPUT
@@ -57,9 +57,9 @@ function resetVariables(){
 
 //Function to update computerChoice to choose new letter
 function newChoice(){
-    var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
-console.log(newChoice)
-}
+    computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+    console.log("new choice: " + computerChoice)
+    }
 
 
 

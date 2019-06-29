@@ -67,4 +67,12 @@ img{
     border-color: blueviolet;
     border-style: dashed;
     border-width: 2px;
+    text-align: center;
+}
+
+#result{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rebeccapurple;
 }

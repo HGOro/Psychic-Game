@@ -29,9 +29,11 @@ document.onkeypress = function(event){
 
     if (playerGuess === computerChoice){
         wins++;
-        alert("Nice job, Professor X!")
+        //alert("Nice job, Professor X!");
         resetVariables();
         newChoice();
+        document.getElementById('result').innerHTML = "Nice job, Professor X!";
+
         
     }
 //if playerGuess does not = computer choice, -1 from guessesLeft, and 
@@ -43,10 +45,12 @@ document.onkeypress = function(event){
     }
 //If guesses reaches 0, then +1 to losses and reset game
     if (guessesLeft === 0){
-        alert("You're no psychic!")
-        losses++
+        //alert("You're no psychic!");
+        losses++;
         resetVariables();
         newChoice();
+        document.getElementById('result').innerHTML = "You're no psychic!";
+
     }
 
 //function to reset guessesLeft to 10 and clear wrongGuesses
@@ -70,5 +74,6 @@ document.getElementById("losses").innerHTML ="Losses: " + losses;
 document.getElementById("guessesLeft").innerHTML ="Guesses Left: " + guessesLeft;
 document.getElementById("wrongGuesses").innerHTML ="Guesses so far: " + wrongGuesses;
 }
+
 
 

@@ -29,6 +29,8 @@ body{
     border-style: solid;
     border-color: rebeccapurple; 
     border-width: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -68,9 +70,20 @@ img{
     border-style: dashed;
     border-width: 2px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #result{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rebeccapurple;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#imgResult{
     text-align: center;
     font-size: 24px;
     font-weight: bolder;

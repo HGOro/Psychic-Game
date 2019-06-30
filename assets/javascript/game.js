@@ -18,6 +18,9 @@ var letterToGuess = null;
 var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
 console.log("comp choice: " + computerChoice)
 
+function winImg(){
+    document.getElementById("imgResult").src="assets/images/profx.jpg";    
+}
 
 //PLAYER INPUT
 //When the player presses a KEY it will either +1 to wins counter, or -1 from guessesLeft
@@ -33,8 +36,8 @@ document.onkeypress = function(event){
         resetVariables();
         newChoice();
         document.getElementById('result').innerHTML = "Nice job, Professor X!";
-
-        
+        //document.getElementById('imgResult').innerHTML = "placeholder";
+        winImg();        
     }
 //if playerGuess does not = computer choice, -1 from guessesLeft, and 
 //if playerGuess does not = computerChoice, keyevent letter logged to wrongGuesses
@@ -50,7 +53,7 @@ document.onkeypress = function(event){
         resetVariables();
         newChoice();
         document.getElementById('result').innerHTML = "You're no psychic!";
-
+        document.getElementById('imgResult').src="assets/images/failPic.jpg";
     }
 
 //function to reset guessesLeft to 10 and clear wrongGuesses
@@ -64,8 +67,6 @@ function newChoice(){
     computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
     console.log("new choice: " + computerChoice)
     }
-
-
 
 //HTML updates
 

@@ -23,7 +23,7 @@ console.log("comp choice: " + computerChoice)
 //When the player presses a KEY it will either +1 to wins counter, or -1 from guessesLeft
 //Need an onkey function
 document.onkeypress = function(event){
-    var playerGuess = event.key;
+    var playerGuess = event.key.toLowerCase();
     //do I need that lowerCase converter?
     var letter= event.key.toLowerCase();
 

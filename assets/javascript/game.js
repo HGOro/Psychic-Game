@@ -106,7 +106,7 @@ $(document).ready(function() {
             guessesLeft--;
             wrongGuesses.push(btnVal);
         }
-        
+
         if (guessesLeft === 0){
             //alert("You're no psychic!");
             losses++;
@@ -121,7 +121,4 @@ $(document).ready(function() {
         document.getElementById("guessesLeft").innerHTML ="Guesses Left: " + guessesLeft;
         document.getElementById("wrongGuesses").innerHTML ="Guesses so far: " + wrongGuesses;
     });
-
-
-
 });

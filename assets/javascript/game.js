@@ -88,6 +88,10 @@ $(document).ready(function() {
         $("#letter-buttons").append(letterBtn);
     }
 
+    $(".letter-btn").on("hover", function(){
+        $(this).addClass("btn-hover");
+    })
+
     //attach on click events to letter buttons
     $(".letter-btn").on("click", function(){
         //get the value of the button letter

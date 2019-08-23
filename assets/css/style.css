@@ -95,5 +95,23 @@ img{
 }
 
 #letter-buttons{
+    text-align: center;
+    background-color: rgb(198, 198, 228);
+    margin-bottom: 5px;
+}
+
+.letter-btn{
+    width: 35px;
+    height: 35px;
+    font-weight: bolder;
+    color: blueviolet;
+    background-color: rgb(245, 238, 238);
+    border: 5px solid blueviolet;
+    margin: 5px;
     
+   
+}
+
+.btn-hover{
+    background-color: yellow;
 }

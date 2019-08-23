@@ -85,12 +85,16 @@ $(document).ready(function() {
         letterBtn.addClass("letter-btn")
         letterBtn.attr("data-letter", alphabet[i]);
         letterBtn.text(alphabet[i]);
-        $("#letter-buttons").append(letterBtn);
+        $("#btn-div").append(letterBtn);
     }
 
-    $(".letter-btn").on("hover", function(){
+    $(".letter-btn").hover(function(){
         $(this).addClass("btn-hover");
-    })
+        }, function(){
+            $(this).removeClass("btn-hover");
+        });
+
+
 
     //attach on click events to letter buttons
     $(".letter-btn").on("click", function(){

@@ -115,3 +115,13 @@ img{
     color: rgb(245, 238, 238);
     border:5px dashed rgb(245, 238, 238);
 }
+
+@media screen and (max-width: 376px) {
+    #subheader{
+
+        font-size: 20px;
+   
+    
+    }
+
+}
